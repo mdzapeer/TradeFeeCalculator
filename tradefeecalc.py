@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 
+
 # Formula
 # Investible amount / Unit price of share = Number of shares (input)
 # No. of Shares X Unit Price of Share = Investible Amount (calculate)

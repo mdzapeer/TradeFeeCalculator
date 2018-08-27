@@ -9,7 +9,7 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "pythonPath": "${workspaceFolder}/.virtual"
+            "pythonPath": "${workspaceFolder}/virtual"
         },
         {
             "name": "Python: Current File",
