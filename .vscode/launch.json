@@ -5,13 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Virutal",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "pythonPath": "${workspaceFolder}/virtual"
-        },
-        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",

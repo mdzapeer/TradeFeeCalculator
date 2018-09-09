@@ -1,0 +1,64 @@
+{% extends "index.html" %}
+{% block title %}
+<p>Calculated</p>
+{% endblock %}
+{% block content %}
+<div class="table">
+    <table>
+        <tr>
+            <td>Balance</td>
+            <td id="balance">
+                {{ balance | safe }}                         
+            </td>
+        </tr>
+        <tr>
+            <td>Invested Amount</td>
+            <td id=investiable>
+                {{ investiable | safe }}
+            </td>
+        </tr>
+        <tr>
+            <td>Unit Price of share</td>
+            <td id=unitSharePrice>
+                {{ unitSharePrice | safe }}
+            </td>
+        </tr>
+        <tr> 
+            <td>Number of shares</td>
+            <td id=shareNumber>
+                {{ shareNumber | safe }}
+            </td>
+        </tr>
+        <tr> 
+            <td>Commission per share</td>
+            <td id=shareCommission>
+                {{ shareCommission | safe }}
+            </td>
+        </tr>
+        <tr> 
+            <td>Fixed commission amount</td>
+            <td id=fixedCommission>
+                {{ fixedCommission | safe }}
+            </td>
+        </tr>
+        <tr> 
+            <td>Total Commission</td>
+            <td id=totalCommission>
+                {{ totalCommission | safe }}
+            </td>
+            <tr> 
+        </tr>
+        <tr> 
+            <td>Total Invested Plus Fee Cost</td>
+            <td id=totalInvestedCost>
+                {{ totalInvestedCost | safe }}
+            </td>
+        </tr>
+        <tr> 
+            <td>Balance after trade</td>
+            <td id=balanceAfter>
+                {{ balanceAfter | safe }}
+            </td>
+        </tr>
+    </table>
+{% endblock %}

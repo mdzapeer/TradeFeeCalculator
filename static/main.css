@@ -1,0 +1,34 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: beige;
+    font-family: Arial;
+}
+
+.container {
+    margin: auto;
+    margin-top: 5%;
+    margin-left: auto;
+    width: 100%;
+    height: 100%;
+    color: darkblue;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+}
+
+.container button{
+    width:70px;
+    height: 30px;
+    background-color: steelblue;
+    margin: 3px;
+    color: white;
+}
+
+table,td {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 8px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trade Fee calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Trade Fee calculator</h1>
+    <form action="{{url_for('calculate')}}" method="POST"</form>
+        <table>
+            <tr>
+                <td><label>Balance Amount</label></td>
+                <td><input title="Balance amount" name="balance"></td>
+            </tr>
+            <tr>
+                <td><label>Amount to Invest</label></td>
+                <td><input title="Amount to Invest" name="investiable"></td>
+            </tr>
+            <tr>
+                <td><label>Unit price of share</label></td>
+                <td><input title="Unit price of share" name="unitSharePrice"></td>
+            </tr>
+            <tr>
+                <td><label>Number of shares</label></td>
+                <td><input title="Number of shares" name="shareNumber"></td>
+            </tr>
+            <tr>
+                <td><label>Commission Per Share</label></td>
+                <td><input title="Commission Per Share" name="shareCommission" value="0.1"></td>
+            </tr>        
+            <tr>
+                <td><label>Fixed Commission Amount</label></td>
+                <td><input title="Fixed Commission Amount" name="fixedCommission" value="3"></td>
+            </tr>
+        <!-- <label>Total Commission Amount</label> -->
+        <!-- <input title="Total Commission Amount" name="totalCommission"> <br>
+        <label>Total Invested Plus Fee Cost</label>
+        <input title="Total Invested Plus Fee Cost" name="totalInvestedCost"> <br> -->
+        </table>
+        <button type="calculate" onclick="calculate()">Calcuate</button>
+    </form>
+
+    <div class="calculated">
+        {% block content %}
+        {% endblock %}
+        <hr/>
+        <footer>
+            <p>&copy; 2018</p>
+        </footer>
+    </div>
+</body>
+</html>
